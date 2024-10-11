@@ -34,6 +34,10 @@
 body {
   font-family: var(--default-font-family);
 }
+
+.menu {
+  background-color: var(--secondary-color);
+}
 h1,
 h2,
 h3,
@@ -44,7 +48,7 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 96px;
+  font-size: 80px;
   line-height: 1.5;
 }
 h2 {
@@ -60,7 +64,7 @@ p {
 }
 
 .hero {
-  background-color: var(--secondary-color);
+  background-color: var(--neutral-color);
   text-align: center;
   padding: 80px 20px;
 }
@@ -128,14 +132,6 @@ p {
   line-height: 27px;
   padding: 15px 30px;
 }
-.project-description a:hover {
-  color: white;
-  background-color: var(--branding-color);
-}
-
-.project-description {
-  padding: 120px 60px;
-}
 
 .logo {
   max-height: 35px;
@@ -164,7 +160,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: white;
   transition: all 100ms ease-in-out;
 }
 
@@ -173,18 +169,8 @@ nav li.active a {
   color: var(--branding-color);
 }
 
-footer {
-  margin: 60px 0;
-}
-
-footer .contact-box {
+.footer {
   background-color: var(--secondary-color);
-  padding: 30px 60px;
-  border-radius: 10px;
-}
-
-footer .contact-box p {
-  margin: 0;
 }
 
 footer .email-link {
