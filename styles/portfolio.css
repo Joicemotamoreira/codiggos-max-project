@@ -34,9 +34,45 @@
 body {
   font-family: var(--default-font-family);
 }
+.logo {
+  max-height: 35px;
+}
+
+.homepage-container {
+  background-image: url(/images/teclado.jpg);
+  background-size: cover;
+}
 
 .menu {
-  background-color: var(--secondary-color);
+  background-color: rgba(120, 120, 120, 0.391);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  text-decoration: underline;
 }
 h1,
 h2,
@@ -50,6 +86,7 @@ h6 {
 h1 {
   font-size: 80px;
   line-height: 1.5;
+  margin-top: 90px;
 }
 h2 {
   font-size: 64px;
@@ -64,7 +101,6 @@ p {
 }
 
 .hero {
-  background-color: var(--neutral-color);
   text-align: center;
   padding: 80px 20px;
 }
@@ -83,12 +119,14 @@ p {
 }
 
 .content-container {
-  padding: 60px 20px;
+  padding: 100px 20px;
+  margin-top: 50px;
 }
 
 .content h1 {
   font-size: 64px;
   line-height: 80px;
+  margin-top: auto;
 }
 
 .content h2 {
@@ -132,11 +170,9 @@ p {
   line-height: 27px;
   padding: 15px 30px;
 }
-
-.logo {
-  max-height: 35px;
+.profile-picture {
+  max-width: 80%;
 }
-
 .work-projects img {
   transition: all 150ms ease-in-out;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
@@ -161,31 +197,6 @@ p {
 }
 .card-body {
   padding: 15px 5px;
-}
-
-nav {
-  padding: 20px 0;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-}
-nav a {
-  text-decoration: none;
-  color: white;
-  transition: all 100ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-  color: var(--branding-color);
 }
 
 .footer {
