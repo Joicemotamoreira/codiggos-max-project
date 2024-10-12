@@ -139,6 +139,7 @@ p {
 
 .work-projects img {
   transition: all 150ms ease-in-out;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .work-projects img:hover {
   transform: scale(1.1);
