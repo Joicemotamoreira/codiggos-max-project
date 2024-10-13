@@ -86,7 +86,7 @@ h6 {
 h1 {
   font-size: 80px;
   line-height: 1.5;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 h2 {
   font-size: 64px;
@@ -102,7 +102,7 @@ p {
 
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 115px 20px 40px 20px;
 }
 
 .hero p {
@@ -119,14 +119,11 @@ p {
 }
 
 .content-container {
-  padding: 100px 20px;
-  margin-top: 50px;
+  padding: 100px 50px 20px 50px;
 }
 
 .content h1 {
-  font-size: 64px;
   line-height: 80px;
-  margin-top: auto;
 }
 
 .content h2 {
@@ -189,7 +186,7 @@ p {
 }
 .course-cards {
   margin-bottom: 45px;
-  padding: 90px 150px;
+  padding: 50px 150px;
 }
 .card {
   padding: 20px;
@@ -197,6 +194,41 @@ p {
 }
 .card-body {
   padding: 15px 5px;
+}
+
+.wrapper-document-container {
+  background-color: var(--highlight-color);
+  max-width: 800px;
+  padding: 20px 0px 0px 0px;
+  border-radius: 14px;
+  margin: 15px auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.document-container {
+  background-color: var(--neutral-color);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.document-container div {
+  margin-left: 20px;
+}
+.document-container h3 {
+  color: var(--branding-color);
+}
+.document-icon {
+  align-items: center;
+  display: flex;
+  margin-right: 20px;
+  transition: all 200ms ease-in-out;
+}
+.document-icon:hover {
+  transform: scale(1.5);
+}
+.material-symbols-outlined {
+  font-size: 40px;
+  color: var(--highlight-color);
 }
 
 .footer {
