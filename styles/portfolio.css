@@ -17,6 +17,11 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
+.material-symbols-outlined {
+  font-size: 40px;
+  color: var(--highlight-color);
+}
+
 .box-shadow {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -161,7 +166,8 @@ h2 {
 }
 .projects,
 .main-courses,
-.main-documents {
+.main-documents,
+.main-contact {
   padding: 100px 120px;
 }
 .product {
@@ -234,9 +240,15 @@ p {
 .document-icon:hover {
   transform: scale(1.5);
 }
-.material-symbols-outlined {
-  font-size: 40px;
-  color: var(--highlight-color);
+
+.main-contact p,
+a {
+  color: var(--branding-color);
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 footer {
