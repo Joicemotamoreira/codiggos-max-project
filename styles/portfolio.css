@@ -27,6 +27,9 @@ body {
 .grid-2-col {
   grid-template-columns: 2fr 1fr;
 }
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-4-col {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -156,11 +159,11 @@ h2 {
   border-radius: 10px;
   width: 80%;
 }
-
-.projects {
+.projects,
+.main-courses {
   padding: 120px;
-  color: var(--highlight-color);
 }
+
 .product {
   margin-bottom: 20px;
 }
@@ -171,31 +174,30 @@ p {
 .product p {
   opacity: 80%;
 }
-.product img {
+.product img,
+.card img {
   transition: all 150ms ease-in-out;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
-.product img:hover {
+.product img:hover,
+.card img {
   transform: scale(1.1);
 }
 
-.main-courses {
-  text-align: center;
-}
-.main-courses img {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-}
-.course-cards {
+.course-card {
   margin-bottom: 45px;
   padding: 50px 150px;
 }
 .card {
-  padding: 20px;
+  padding: 50px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .card-body {
   padding: 15px 5px;
+}
+.card-body p {
+  padding-bottom: 50px;
 }
 
 .wrapper-document-container {
@@ -289,17 +291,13 @@ footer .social-links svg:hover {
     font-size: 26px;
   }
 
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-  .content {
-    text-align: center;
-    padding: 0;
-  }
-
-  nav a {
+  menu a {
     font-size: 14px;
     margin: 5px;
+  }
+  .grid-2-col,
+  .grid-3-col,
+  .grid-4-col {
+    grid-template-columns: 1fr;
   }
 }
