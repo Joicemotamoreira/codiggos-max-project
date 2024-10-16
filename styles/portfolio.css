@@ -9,50 +9,44 @@
 
 body {
   font-family: var(--default-font-family);
+  background-color: var(--neutral-color);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .logo {
   max-height: 45px;
 }
-
-.homepage-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/images/teclado.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .menu {
   background-color: rgba(120, 120, 120, 0.391);
   backdrop-filter: blur(10px);
   position: fixed;
-  width: 100%;
   top: 0;
   font-size: 20px;
-}
-nav {
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-nav li {
+.menu li {
   display: inline;
   list-style: none;
   line-height: 42px;
   margin-left: 15px;
 }
-nav a {
+.menu a {
   text-decoration: none;
   color: white;
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover,
-nav li.active a {
+.menu a:hover,
+.menu li.active a {
   text-decoration: underline;
 }
+
 h1,
 h2,
 h3,
@@ -65,7 +59,6 @@ h6 {
 h1 {
   font-size: 80px;
   line-height: 1.5;
-  margin-top: 50px;
 }
 h2 {
   font-size: 64px;
@@ -80,8 +73,12 @@ p {
 }
 
 .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/teclado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 115px 20px 40px 20px;
+  padding: 115px 20px 90px 20px;
 }
 .hero h1 {
   color: white;
@@ -91,6 +88,16 @@ p {
   font-size: 24px;
   line-height: 1.5;
   color: white;
+}
+
+main {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+main p {
+  padding: 20px 40px;
 }
 
 .content-container {
@@ -120,28 +127,20 @@ p {
   margin: 30px;
 }
 
-.btn-branding {
+.button {
   background: var(--branding-color);
   border-radius: 4px;
   color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
-  border: 1px solid var(--branding-color) !important;
+  text-decoration: none;
 }
-.btn-branding:hover {
+.button:hover {
   color: var(--branding-color);
   background-color: var(--secondary-color);
 }
-.btn-branding-outline {
-  background: var(--secondary-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  color: var(--branding-color);
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
+
 .profile-picture {
   max-width: 80%;
 }
@@ -210,9 +209,12 @@ footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/teclado-branco.jpg);
   background-size: cover;
+  padding: 60px;
+  text-align: center;
+}
+footer div {
   padding: 15px;
 }
-
 footer .email-link {
   text-decoration: none;
   color: var(--neutral-color);
@@ -222,16 +224,21 @@ footer .email-link {
 footer .email-link:hover {
   color: var(--branding-color);
 }
-
+footer .social-links {
+  display: flex;
+  justify-content: center;
+}
 footer .social-links a {
   margin: 0 20px;
   background-color: var(--secondary-color);
   padding: 15px;
   border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
-
 footer .social-links svg {
-  transition: all 150ms ease-in-out;
+  transition: all 180ms ease-in-out;
 }
 footer .social-links svg:hover {
   cursor: pointer;
