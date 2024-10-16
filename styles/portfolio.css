@@ -1,6 +1,6 @@
 :root {
   --branding-color: #980000;
-  --highlight-color: #415765;
+  --highlight-color: #2c3941;
   --secondary-color: #dadfe5;
   --neutral-color: #ebecee;
   --heading-font-family: "Playfair Display", serif;
@@ -10,6 +10,7 @@
 body {
   font-family: var(--default-font-family);
   background-color: var(--neutral-color);
+  color: var(--highlight-color);
 }
 
 .container {
@@ -25,6 +26,9 @@ body {
 }
 .grid-2-col {
   grid-template-columns: 2fr 1fr;
+}
+.grid-4-col {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .logo {
   max-height: 45px;
@@ -138,6 +142,7 @@ main {
 .about-description h1,
 h2 {
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 .about-description p {
   padding-bottom: 40px;
@@ -152,11 +157,26 @@ h2 {
   width: 80%;
 }
 
-.work-projects img {
+.projects {
+  padding: 120px;
+  color: var(--highlight-color);
+}
+.product {
+  margin-bottom: 20px;
+}
+.product h3,
+p {
+  margin: 5px;
+}
+.product p {
+  opacity: 80%;
+}
+.product img {
   transition: all 150ms ease-in-out;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
-.work-projects img:hover {
+.product img:hover {
   transform: scale(1.1);
 }
 
