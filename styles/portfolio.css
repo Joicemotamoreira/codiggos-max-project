@@ -160,10 +160,10 @@ h2 {
   width: 80%;
 }
 .projects,
-.main-courses {
-  padding: 120px;
+.main-courses,
+.main-documents {
+  padding: 100px 120px;
 }
-
 .product {
   margin-bottom: 20px;
 }
@@ -200,7 +200,7 @@ p {
   padding-bottom: 50px;
 }
 
-.wrapper-document-container {
+.documents-container {
   background-color: var(--highlight-color);
   max-width: 800px;
   padding: 20px 0px 0px 0px;
@@ -208,18 +208,22 @@ p {
   margin: 15px auto;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
-.document-container {
+.document {
   background-color: var(--neutral-color);
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
-.document-container div {
+.document div {
   margin-left: 20px;
 }
-.document-container h3 {
+.document h3 {
   color: var(--branding-color);
+}
+.document h3,
+p {
+  text-align: justify;
 }
 .document-icon {
   align-items: center;
