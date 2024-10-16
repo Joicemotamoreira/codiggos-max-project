@@ -290,6 +290,15 @@ footer .social-links svg:hover {
   cursor: pointer;
   transform: scale(1.5);
 }
+.by-joice {
+  font-size: 16px;
+  opacity: 70%;
+  text-align: center;
+  padding: 10px;
+}
+.by-joice a {
+  font-size: 16px;
+}
 
 @media (max-width: 900px) {
   h1,
