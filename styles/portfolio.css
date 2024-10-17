@@ -535,4 +535,10 @@ footer .social-links svg:hover {
   .button {
     font-size: 16px;
   }
+  .by-joice {
+    font-size: 10px;
+  }
+  .by-joice a {
+    font-size: 10px;
+  }
 }
