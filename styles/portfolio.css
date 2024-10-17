@@ -186,6 +186,7 @@ p {
 }
 .product p {
   opacity: 80%;
+  text-align: center;
 }
 .product img,
 .card img {
