@@ -40,6 +40,7 @@ body {
 }
 .logo {
   max-height: 45px;
+  padding-left: 20px;
 }
 .button {
   background: var(--branding-color);
@@ -196,19 +197,21 @@ p {
   transform: scale(1.1);
 }
 
-.course-card {
-  margin-bottom: 45px;
-  padding: 50px 150px;
-}
 .card {
-  padding: 50px;
+  margin: 42px;
+  padding: 29px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 .card-body {
-  padding: 15px 5px;
+  min-height: 230px;
 }
-.card-body p {
-  padding-bottom: 50px;
+.card-body h3 {
+  font-size: 24px;
+  margin-top: 35px;
+}
+.card-footer {
+  padding: 20px;
 }
 
 .documents-container {
