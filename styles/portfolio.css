@@ -142,7 +142,7 @@ main {
 }
 
 .main-about {
-  padding: 140px 45px 120px 45px;
+  padding: 95px 45px 120px 45px;
 }
 .main-about h1 {
   font-size: 48px;
@@ -260,6 +260,9 @@ a {
   font-size: 18px;
   cursor: pointer;
 }
+.main-contact h3 {
+  margin-bottom: 4px;
+}
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -310,7 +313,58 @@ footer .social-links svg:hover {
   font-size: 16px;
 }
 
+@media (max-width: 1400px) {
+  .main-courses .grid {
+    grid-gap: 0px;
+  }
+  .card {
+    margin: 18px;
+  }
+}
+@media (max-width: 1322px) {
+  .card-body {
+    min-height: 272px;
+  }
+  .main-courses .button {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+}
+@media (max-width: 1072px) {
+  .main-about h1 {
+    font-size: 40px;
+  }
+  .main-about h2 {
+    font-size: 23px;
+  }
+  .card {
+    margin: 3px;
+  }
+  .card-body {
+    min-height: 302px;
+  }
+}
+
+@media (max-width: 935px) {
+  .product h3 {
+    font-size: 24px;
+  }
+  .product p {
+    line-height: 1.2;
+    font-size: 15px;
+  }
+  .grid {
+    grid-gap: 20px;
+  }
+  .main-courses {
+    padding: 1px 40px 60px;
+  }
+}
+
 @media (max-width: 900px) {
+  .hero {
+    padding: 45px;
+  }
   h1,
   h2 {
     font-size: 44px;
@@ -330,9 +384,153 @@ footer .social-links svg:hover {
     font-size: 14px;
     margin: 5px;
   }
-  .grid-2-col,
+  .grid-2-col {
+    grid-template-columns: 1fr;
+  }
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-description {
+    order: 2;
+  }
+  .profile-picture {
+    order: 1;
+    max-width: 60%;
+  }
+  main .projects {
+    padding: 20px;
+  }
+  .product img {
+    width: 80%;
+  }
+  .product h3 {
+    font-size: 26px;
+  }
+  .product p {
+    line-height: 1.2;
+    font-size: 18px;
+  }
+  footer {
+    padding: 20px;
+  }
+  .by-joice {
+    font-size: 12px;
+  }
+  .by-joice a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 835px) {
+  .document h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .card img {
+    width: 80%;
+  }
+  .card-body {
+    min-height: 330px;
+  }
+  .card-body p {
+    line-height: 20px;
+  }
+  .card-footer {
+    padding: 20px 5px;
+  }
+  .main-courses {
+    padding: 1px 5px 60px;
+  }
+  .product h3,
+  p {
+    margin: 0px;
+  }
+}
+@media (max-width: 720px) {
+  .document h3 {
+    margin: 0px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 642px) {
+  .main-about h1 {
+    font-size: 30px;
+  }
+  .about-description {
+    text-align: center;
+  }
   .grid-3-col,
   .grid-4-col {
     grid-template-columns: 1fr;
+  }
+  .card {
+    margin: 25px 50px;
+  }
+  .card img {
+    margin-top: 30px;
+  }
+  .card-body {
+    min-height: 0px;
+  }
+  .card-footer {
+    padding: 26px 5px;
+  }
+  .document h3,
+  p {
+    text-align: left;
+  }
+}
+@media (max-width: 616px) {
+  .main-contact h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 570px) {
+  .main-documents,
+  .main-contact {
+    padding: 5px 25px 90px 25px;
+  }
+}
+@media (max-width: 515px) {
+  .main-about {
+    padding: 50px 10px;
+  }
+  .main-about h1 {
+    font-size: 25px;
+  }
+  .main-about h2 {
+    font-size: 20px;
+  }
+  .about-description h1,
+  h2 {
+    padding-bottom: 5px;
+  }
+  .main-documents {
+    padding: 5px 50px 90px 50px;
+  }
+
+  footer .social-links {
+    display: none;
+  }
+  footer .email-link {
+    font-size: 20px;
+  }
+  .button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 415px) {
+  .card {
+    margin: 25px;
+  }
+  .document {
+    padding: 7px;
+  }
+  footer .email-link {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 16px;
   }
 }
