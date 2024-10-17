@@ -400,9 +400,7 @@ footer .social-links svg:hover {
   main .projects {
     padding: 20px;
   }
-  .product img {
-    width: 80%;
-  }
+
   .product h3 {
     font-size: 26px;
   }
@@ -475,6 +473,9 @@ footer .social-links svg:hover {
   .card-footer {
     padding: 26px 5px;
   }
+  .projects {
+    padding: 5px 80px 90px 80px;
+  }
   .document h3,
   p {
     text-align: left;
@@ -505,7 +506,8 @@ footer .social-links svg:hover {
   h2 {
     padding-bottom: 5px;
   }
-  .main-documents {
+  .main-documents,
+  .projects {
     padding: 5px 50px 90px 50px;
   }
 
