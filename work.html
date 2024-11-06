@@ -30,6 +30,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="menuToggleWrapper">
+        <div class="menuToggle" onclick="menuToggle()">☰</div>
+      </div>
       <header class="menu">
         <div>
           <a href="/" title="Home">
@@ -193,5 +196,37 @@
         >.
       </div>
     </div>
+    <div class="newMenuWrapper">
+      <div class="newMenu">
+        <div class="icons-newMenu">
+          <a href="/"
+            ><span class="material-symbols-outlined home2"> home </span></a
+          >
+          <a
+            ><span
+              class="material-symbols-outlined closeItem"
+              onclick="closeNewMenu()"
+            >
+              close
+            </span></a
+          >
+        </div>
+        <ul>
+          <li><a href="/about.html" title="Sobre mim">Sobre</a></li>
+          <li><a href="/work.html" title="Meus projetos">Projetos</a></li>
+          <li><a href="/courses.html" title="Meus cursos">Cursos</a></li>
+          <li>
+            <a href="/documents.html" title="Arquivos para download"
+              >Documentos</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" title="Entre em contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
