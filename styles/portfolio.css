@@ -11,6 +11,7 @@ body {
   font-family: var(--default-font-family);
   background-color: var(--neutral-color);
   color: var(--highlight-color);
+  margin: 0;
 }
 
 .container {
@@ -264,6 +265,19 @@ a {
   margin-bottom: 4px;
 }
 
+.menuToggle {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+.newMenu {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/teclado-branco.jpg);
@@ -358,6 +372,15 @@ footer .social-links svg:hover {
   }
   .main-courses {
     padding: 1px 40px 60px;
+  }
+  .menu {
+    display: none;
+  }
+  .menuToggle {
+    display: block;
+  }
+  .newMenu.active {
+    display: block;
   }
 }
 
