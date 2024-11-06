@@ -280,10 +280,17 @@ a {
   font-size: 25px;
   color: white;
 }
-
+.newMenuWrapper {
+  display: none;
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 .newMenu {
   position: fixed;
-  display: none;
   top: 0;
   right: 0;
   background: white;
@@ -306,6 +313,7 @@ a {
 .closeItem {
   font-size: 30px;
 }
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/teclado-branco.jpg);
@@ -407,7 +415,7 @@ footer .social-links svg:hover {
   .menuToggle {
     display: block;
   }
-  .newMenu.active {
+  .newMenuWrapper.active {
     display: block;
   }
 }
