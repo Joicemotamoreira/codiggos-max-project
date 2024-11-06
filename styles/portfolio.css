@@ -286,6 +286,25 @@ a {
   display: none;
   top: 0;
   right: 0;
+  background: white;
+  height: 100%;
+  width: 190px;
+  line-height: 40px;
+  padding: 20px 20px 0px 40px;
+  justify-content: space-between;
+}
+.newMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.icons-newMenu {
+  display: flex;
+  justify-content: space-between;
+}
+.home2,
+.closeItem {
+  font-size: 30px;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
