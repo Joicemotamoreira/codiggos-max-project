@@ -176,7 +176,7 @@ h2 {
 .main-courses,
 .main-documents,
 .main-contact {
-  padding: 5px 120px 90px 120px;
+  padding: 40px 120px 90px 120px;
 }
 .product {
   margin-bottom: 20px;
@@ -407,7 +407,7 @@ footer .social-links svg:hover {
     grid-gap: 20px;
   }
   .main-courses {
-    padding: 1px 40px 60px;
+    padding: 50px 40px 60px;
   }
   .menu {
     display: none;
@@ -496,7 +496,7 @@ footer .social-links svg:hover {
     padding: 20px 5px;
   }
   .main-courses {
-    padding: 1px 5px 60px;
+    padding: 50px 5px 60px;
   }
   .product h3,
   p {
@@ -533,11 +533,11 @@ footer .social-links svg:hover {
     padding: 26px 5px;
   }
   .projects {
-    padding: 5px 80px 90px 80px;
+    padding: 40px 80px 90px 80px;
   }
   .document h3,
   p {
-    text-align: left;
+    text-align: center;
   }
 }
 @media (max-width: 616px) {
@@ -548,13 +548,10 @@ footer .social-links svg:hover {
 @media (max-width: 570px) {
   .main-documents,
   .main-contact {
-    padding: 5px 25px 90px 25px;
+    padding: 40px 25px 90px 25px;
   }
 }
 @media (max-width: 515px) {
-  .main-about {
-    padding: 50px 10px;
-  }
   .main-about h1 {
     font-size: 25px;
   }
@@ -567,7 +564,7 @@ footer .social-links svg:hover {
   }
   .main-documents,
   .projects {
-    padding: 5px 50px 90px 50px;
+    padding: 40px 50px 90px 50px;
   }
 
   footer .social-links {
